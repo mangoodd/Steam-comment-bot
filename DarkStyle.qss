@@ -1,0 +1,216 @@
+QWidget {
+    color: white;
+    /*background-color: qlineargradient(spread:pad,x1: 0,y1: 0,x2: 0.6,  y2: 2,  stop: 0 rgba(18, 6, 22, 255), stop: 1 rgba(108, 96, 122, 255));*/
+    background-color: qlineargradient(spread:pad,  x1: 0,  y1: 0,  x2: 0.6,  y2: 3,  stop: 0 rgba(24, 26, 33, 255),  stop: 1 rgba(108, 96, 122, 200));
+    border-radius: 0px;
+    selection-background-color: rgba(255, 255, 255, 100);
+    font: 12pt 'Times New Roman';
+    border-top: 6px solid qlineargradient(spread:pad,  x1: 0,  y1: 0,  x2: 0,  y2: 1,  stop: 0 rgba(170, 255, 255, 230),  stop: 0.9 rgba(0, 0, 0, 0));
+    border-right: 6px solid qlineargradient(spread:pad,  x1: 1,  y1: 0,  x2: 0,  y2: 0,  stop: 0 rgba(170, 255, 255, 230),  stop: 0.9 rgba(0, 0, 0, 0));
+    border-left: 6px solid qlineargradient(spread:pad,  x1: 0,  y1: 0,  x2: 1,  y2: 0,  stop: 0 rgba(170, 255, 255, 230),  stop: 0.9 rgba(0, 0, 0, 0));
+
+}
+
+.QPushButton {
+    background-color: rgba(48, 36, 52, 0);
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+QPushButton#pushButton_big {
+    font: 18pt "Sitka";
+}
+
+QPushButton#pb_AdditWindow {
+    border-radius: 0px;
+    background-color: rgb(24, 26, 33);
+}
+
+QPushButton:disabled {
+    border:2px solid rgba(200, 200, 200, 255);
+    background-color: rgba(80, 80, 80, 70);
+    color: rgba(200, 200, 200, 255);
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad,
+    x1: 0.9,  y1: 1.2,  x2: 0,  y2: 0,
+    stop: 0 rgba(170, 255, 255, 255),  stop: 0.1 rgba(170, 254, 255, 60),  stop: 0.6 rgba(48, 36, 52, 0));
+}
+
+QPushButton:pressed {
+    border: 2px solid rgba(170, 254, 255, 255);
+    background-color: rgba(0, 0, 0, 60);
+}
+
+QPushButton#pb_setEnabled_pass {
+    border: 0px;
+    border-radius: None;
+    background-color: rgba(255, 0, 0, 255);
+}
+
+QPushButton#pb_exit {
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    image: url('image/x-mark-8RED.png');
+    border: 0px;
+}
+
+.QPushButton#pb_exit:pressed {
+    image: url('image/x-mark-8BLACK.png');
+    border: 0px;
+    background-color: rgba(200, 100, 100, 250);
+}
+
+QPushButton#pb_exit:hover {
+    border:0px;
+    image: url('image/x-mark-8BLACK.png');
+    background-color:     qlineargradient(spread:pad,  x1: 0,  y1: 1,  x2: 1,  y2: 0,  stop: 0 rgba(255, 0, 0, 255),  stop: 1 rgba(120, 0, 0, 255));;
+}
+
+QComboBox {
+    background-color: rgba(48, 36, 52, 0);
+    border: 1px solid white;
+    border-radius: 6px;
+    padding-left: 8px;
+}
+
+QComboBox:drop-down {
+    border: 0px;
+}
+
+QComboBox:hover {
+    background-color: qlineargradient(spread:pad,
+    x1: 0.9,  y1: 1.2,  x2: 0,  y2: 0,
+    stop: 0 rgba(170, 255, 255, 255),
+    stop: 0.1 rgba(170, 254, 255, 60),
+    stop: 0.6 rgba(48, 36, 52, 0));
+}
+
+QComboBox:disabled {
+    border:2px solid rgba(200, 200, 200, 255);
+    background-color: rgba(80, 80, 80, 70);
+    color: rgba(200, 200, 200, 255);
+}
+
+QComboBox:on {
+    border: 2px solid rgba(170, 254, 255, 255);
+    background-color: rgba(0, 255, 255, 5);
+}
+
+QComboBox QListView {
+    border: 1px solid grey;
+    padding: 6px;
+    selection-background-color: rgba(255, 255, 255, 30);
+    selection-color: white;
+    outline: 0px;
+    background-color: qlineargradient(spread:pad,  x1: 1,  y1: -1,  x2: 1,  y2: 1,
+    stop: 0 rgba(170, 254, 255, 70),  stop: 1 rgba(48, 36, 52, 255));
+}
+
+QLineEdit {
+    background-color: qlineargradient(spread:pad,  x1: 0,  y1: 0,  x2: 0.6,  y2: 0.5,
+    stop: 0 rgba(20, 20, 20, 255),  stop: 1 rgba(108, 96, 122, 0));
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 6px;
+    font: 75 12pt "Times New Roman";
+}
+
+QLineEdit:hover {
+    border: 2px solid rgba(170, 254, 255, 255);
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(170, 254, 255, 255);
+}
+
+QProgressBar {
+    background-color: rgba(48, 36, 52, 0);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: right;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(spread:pad,
+    x1: 0,  y1: 0,  x2: 1,  y2: 0,
+    stop: 0 #39007f,  stop: 1 #3e005d);
+    border-radius: 10px;
+}
+
+.QLabel {
+    border: None;
+    background: rgba(0, 0, 0, 0);
+    font: 75 16pt "Times New Roman";
+}
+
+QLabel#textLabelCheck {
+    font: 75 12pt "Times New Roman";
+}
+
+QLabel#PrBarText {
+    font: 75 12pt "Times New Roman";
+    padding-left: 12px;
+}
+
+QLabel#textLabelStatus {
+    color: red;
+    font: 75 12pt "Times New Roman";
+}
+
+QCheckBox {
+    border: None;
+    background: rgba(0, 0, 0, 0);
+}
+
+QFrame {
+    border: None;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    font: 75 16pt 'Times New Roman';
+}
+
+QFrame#widget_login QLineEdit {
+    border-radius: 4px;
+    padding: 2px;
+    padding-left: 12px;
+    outline: 0px;
+    font: 75 11pt 'Times New Roman';
+}
+
+QFrame#widget_login QLineEdit#lE_password:on {
+    font: 75 6pt 'Times New Roman';
+}
+
+QMessageBox QPushButton {
+    margin: 4px;
+    padding: 6px 16px 6px 16px;
+    background-color: rgba(48, 36, 52, 0);
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.QMessageBox QLabel {
+    font: 75 12pt 'Times New Roman';
+}
+
+QDialog {
+    border: 2px solid white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.QDialog QLabel {
+    font: 75 12pt 'Times New Roman';
+}
+
+QDialog QPushButton {
+    margin: 4px;
+    padding: 6px 16px 6px 16px;
+    background-color: rgba(48, 36, 52, 0);
+    border: 1px solid white;
+    border-radius: 8px;
+}
