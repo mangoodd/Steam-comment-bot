@@ -38,22 +38,32 @@ Creating an application to automatically write comments on Steam profiles.
 
 Для проверки наличия комментария, данные от инициирующего аккаунта не нужны.
 
-Политика [Steam](https://store.steampowered.com/privacy_agreement/) накладывает определенные ограничения на аккаунты, поэтому не со всех аккаунтов возможно оставить комментарий.
+Политика [Steam](https://store.steampowered.com/privacy_agreement/) накладывает определенные ограничения на аккаунты,
+поэтому не со всех аккаунтов возможно оставить комментарий.
 
 Для полноценной работы программы в автоматическом режиме рекомендуется отключать двухэтапную аутентификацию.
 В противном случае необходимо подтверждать вход в аккаунт каждый раз при написании нового комментария.
 
-
 ### Main functionality:
 
-- Checking the presence of the specified comment on the specified page and displaying information about its result and the time of the check.
-- Launch automatic check for the presence of a comment on the page after a specified period of time. Automatic writing a comment in its absence.
+- Checking the presence of the specified comment on the specified page and displaying information about its result and
+  the time of the check.
+- Launch automatic check for the presence of a comment on the page after a specified period of time. Automatic writing a
+  comment in its absence.
 
-The process of writing a comment is carried out through an existing Steam account, the data from which must be specified in the field ("Steam account data"/"Data of Steam account").
+The process of writing a comment is carried out through an existing Steam account, the data from which must be specified
+in the field ("Steam account data"/"Data of Steam account").
 
 To check for the presence of a comment, data from the initiating account is not needed.
 
-The [Steam](https://store.steampowered.com/privacy_agreement/) policy imposes certain restrictions on accounts, so not all accounts can leave a comment.
+The [Steam](https://store.steampowered.com/privacy_agreement/) policy imposes certain restrictions on accounts, so not
+all accounts can leave a comment.
 
 For full-fledged operation of the program in automatic mode, it is recommended to disable two-step authentication.
 Otherwise, you must confirm the login to your account every time write a new comment.
+
+### Анимация / Animation:
+
+<p align="center">
+  <img src="screenshots/Steam-comment-bot.gif">
+</p>
