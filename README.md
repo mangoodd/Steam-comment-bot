@@ -2,7 +2,7 @@
 
 [![Language](https://img.shields.io/badge/language-Python3.11-blue.svg?style=flat)](https://www.python.org)
 [![Module](https://img.shields.io/badge/module-Pyqt5-brightgreen.svg?style=flat)](https://www.qt.io/qt-for-python)
-[![Module](https://img.shields.io/badge/module-Bs4-brightgreen.svg?style=flat)](https://pypi.org/project/beautifulsoup4/)
+[![Module](https://img.shields.io/badge/module-Beautifulsoup4-brightgreen.svg?style=flat)](https://pypi.org/project/beautifulsoup4/)
 [![Module](https://img.shields.io/badge/module-Selenium-brightgreen.svg?style=flat)](https://pypi.org/project/selenium/)
 
 ---
@@ -19,7 +19,7 @@ Creating an application to automatically write comments on Steam profiles.
 
 - Python 3.11+
 - PyQt5 5.15.9+
-- Bs4 0.0.1+
+- Beautifulsoup4 4.11.2+
 - Selenium 4.8+
 
 ### Интерфейс / Interface:
