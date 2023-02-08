@@ -10,8 +10,8 @@ from PyQt5.QtGui import QIcon
 import Work_proc
 import parser
 from Work_proc import Worker
-from gui_dialog import UiDialog
-from gui_main import GuiMain
+from gui.gui_dialog import UiDialog
+from gui.gui_main import GuiMain
 from steam_bot_class import SteamBot
 
 
@@ -34,7 +34,7 @@ class MainFlow(GuiMain, SteamBot):
         self.last_error = ''
 
         try:
-            self.setStyleS('DarkStyle.qss')  # reading settings of StyleSheet
+            self.setStyleS('background/DarkStyle.qss')  # reading settings of StyleSheet
         except FileNotFoundError:
             self.SetDefaultStyle()  # setting default StyleSheet
         self.defaulSS_lE = self.lineEdit_link.styleSheet()  # saving default StyleSheet of LineEdit
