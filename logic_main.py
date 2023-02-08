@@ -161,7 +161,7 @@ class MainFlow(GuiMain, SteamBot):
         """
         link = self.get_link()
         try:
-            if re.findall(r'(\bhttps://steamcommunity.com)', link):
+            if re.findall(r'(\bhttps://steamcommunity.com/)', link):
                 return True
             elif re.findall(r'steamcommunity.com', link):
                 new_link = 'https://' + link[re.search(r'steamcommunity.com', link).span()[0]:]
@@ -304,10 +304,10 @@ class MainFlow(GuiMain, SteamBot):
         :return: bool
         """
         if not self.get_link():
-            self.field_is_empty(self.lineEdit_link, 'empty_field_account')
+            self.field_is_empty(self.lineEdit_link, 'empty_field_link')
             return False
         if not self.get_comment():
-            self.field_is_empty(self.lineEdit_comment, 'empty_field_account')
+            self.field_is_empty(self.lineEdit_comment, 'empty_field_comment')
             return False
         else:
             self.lineEdit_link.setStyleSheet(self.defaulSS_lE)
@@ -342,7 +342,8 @@ class MainFlow(GuiMain, SteamBot):
         field.setStyleSheet('border: 1px solid red;')
         self.last_error = text_error
         self.textLabelStatus.setText(self.status.get(text_error))
-        self.resize(GuiMain.W, GuiMain.H_plus)
+        if not text_error in ('empty_field_link','empty_field_comment'):
+            self.resize(GuiMain.W, GuiMain.H_plus)
         field.setFocus(Qt.MouseFocusReason)
         field.setCursorPosition(0)
 
