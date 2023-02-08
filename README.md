@@ -5,6 +5,8 @@
 [![Module](https://img.shields.io/badge/module-Bs4-brightgreen.svg?style=flat)](https://pypi.org/project/beautifulsoup4/)
 [![Module](https://img.shields.io/badge/module-Selenium-brightgreen.svg?style=flat)](https://pypi.org/project/selenium/)
 
+---
+
 ### Цель:
 
 Создание приложения для автоматического написания комментариев в профилях Steam.
@@ -31,7 +33,7 @@ Creating an application to automatically write comments on Steam profiles.
 - Запуск автоматической проверки наличия комментария на странице через заданный промежуток времени. Автоматическое
   написание комментария при его отсутствии.
 
-Операция написания комментария осуществляется через существующий аккаунт Steam, данные от которого необходимо указывать
+Процесс написания комментария осуществляется через существующий аккаунт Steam, данные от которого необходимо указывать
 в поле ("Данные аккаунта Steam"/"Data of Steam account").
 
 Для проверки наличия комментария, данные от инициирующего аккаунта не нужны.
@@ -47,7 +49,7 @@ Creating an application to automatically write comments on Steam profiles.
 - Checking the presence of the specified comment on the specified page and displaying information about its result and the time of the check.
 - Launch automatic check for the presence of a comment on the page after a specified period of time. Automatic writing a comment in its absence.
 
-The operation of writing a comment is carried out through an existing Steam account, the data from which must be specified in the field ("Steam account data"/"Data of Steam account").
+The process of writing a comment is carried out through an existing Steam account, the data from which must be specified in the field ("Steam account data"/"Data of Steam account").
 
 To check for the presence of a comment, data from the initiating account is not needed.
 
