@@ -4,8 +4,8 @@ import time
 
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import QThreadPool, Qt
-from PyQt5.QtWidgets import QDialog
 from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import QDialog
 
 import Work_proc
 import parser
@@ -342,7 +342,7 @@ class MainFlow(GuiMain, SteamBot):
         field.setStyleSheet('border: 1px solid red;')
         self.last_error = text_error
         self.textLabelStatus.setText(self.status.get(text_error))
-        if not text_error in ('empty_field_link','empty_field_comment'):
+        if not (text_error in ('empty_field_link', 'empty_field_comment')):
             self.resize(GuiMain.W, GuiMain.H_plus)
         field.setFocus(Qt.MouseFocusReason)
         field.setCursorPosition(0)
